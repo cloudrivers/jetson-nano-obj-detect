@@ -46,3 +46,5 @@ feed_dict = {
     input_tensor_name: x
 }
 preds = tf_sess.run(output_tensor, feed_dict)
+
+print('Predicted:', decode_predictions(preds, top=3)[0])
